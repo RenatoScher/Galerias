@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --galWidth: 200;
+    --galWidthPer: calc(var(--galWidth) * 1%)
+}
+
+body {
+    overflow: hidden;
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #888;
+}
+
+.gallery {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    overflow: hidden
+}
+
+@keyframes slides {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: calc(var(--galWidthPer) * -1 + 100%);
+    }
+}
+
+.photos {
+    display: grid;
+    height: 100%;
+    width: var(--galWidthPer);
+    background-image: url('https://abre.ai/gKbJ');
+    background-size: contain;
+    margin-left: -5%;
+    animation: slides calc(var(--galWidth) / 25 * 1s) infinite alternate ease-in-out;
+}
+
+.photos:hover {
+    animation-play-state: paused;
+}
+
+.photos div {
+    height: 100%;
+    width: 100%;
+    transition: transform 280ms;
+    border: 1px white solid;
+    background-position: center;
+    background-size: cover;
+}
+
+.photos div:hover {
+    transform: scale(1.01);
+    z-index: 2;
+    border: 2px cyan solid;
+}
+
+.photos div:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(images/cabinet.jfif);
+}
+
+.photos div:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(images/Memory.jfif);
+}
+
+.photos div:nth-child(3) {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(images/computer6.jfif);
+}
+
+.photos div:nth-child(4) {
+    grid-area: 1 / 4 / 3 / 5;
+    background-image: url(images/tableandpc.jfif);
+}
+
+.photos div:nth-child(5) {
+    grid-area: 1 / 5 / 2 / 6;
+    background-image: url(images/computer5.jfif);
+}
+
+.photos div:nth-child(6) {
+    grid-area: 1 / 6 / 2 / 8;
+    background-image: url(images/keyboard2.jfif);
+}
+
+.photos div:nth-child(7) {
+    grid-area: 1 / 8 / 3 / 9;
+    background-image: url(images/computer2.jfif);
+}
+
+.photos div:nth-child(8) {
+    grid-area: 2 / 1 / 3 / 3;
+    background-image: url(images/person.jfif);
+}
+
+.photos div:nth-child(9) {
+    grid-area: 2 / 3 / 4 / 4;
+    background-image: url(images/keyboard1.jfif);
+}
+
+.photos div:nth-child(10) {
+    grid-area: 3 / 4 / 4 / 5;
+    background-image: url(images/clock.jfif);
+}
+
+.photos div:nth-child(11) {
+    grid-area: 2 / 5 / 4 / 7;
+    background-image: url(images/darkneon.jfif);
+}
+
+.photos div:nth-child(12) {
+    grid-area: 2 / 7 / 3 / 8;
+    background-image: url(images/neonCabinet.jfif);
+}
+
+.photos div:nth-child(13) {
+    grid-area: 3 / 7 / 6 / 9;
+    background-image: url(images/biggamer.jfif);
+}
+
+.photos div:nth-child(14) {
+    grid-area: 3 / 1 / 5 / 3;
+    background-image: url(images/redblueneon.jfif);
+}
+
+.photos div:nth-child(15) {
+    grid-area: 4 / 3 / 6 / 5;
+    background-image: url(images/intern.jfif);
+}
+
+.photos div:nth-child(16) {
+    grid-area: 4 / 5 / 6 / 6;
+    background-image: url(images/computer3.jfif);
+}
+
+.photos div:nth-child(17) {
+    grid-area: 4 / 6 / 5 / 7;
+    background-image: url(images/computer4.jfif);
+}
+
+.photos div:nth-child(18) {
+    grid-area: 5 / 1 / 6 / 2;
+    background-image: url(images/computer1.jfif);
+}
+
+.photos div:nth-child(19) {
+    grid-area: 5 / 2 / 6 / 3;
+    background-image: url(images/mouse1.jfif);
+}
+
+.photos div:nth-child(20) {
+    grid-area: 5 / 6 / 6 / 7;
+    background-image: url(images/computer7.jfif);
+}
+
+.photos div:nth-child(21) {
+    grid-area: 1 / 9 / 2 / 10;
+    background-image: url(images/cabinet.jfif);
+}
+
+.photos div:nth-child(22) {
+    grid-area: 1 / 10 / 2 / 11;
+    background-image: url(images/Memory.jfif);
+}
+
+.photos div:nth-child(23) {
+    grid-area: 1 / 11 / 3 / 12;
+    background-image: url(images/computer6.jfif);
+}
+
+.photos div:nth-child(24) {
+    grid-area: 1 / 12 / 2 / 13;
+    background-image: url(images/tableandpc.jfif);
+}
+
+.photos div:nth-child(25) {
+    grid-area: 1 / 13 / 2 / 15;
+    background-image: url(images/computer5.jfif);
+}
+
+.photos div:nth-child(26) {
+    grid-area: 1 / 15 / 2 / 16;
+    background-image: url(images/keyboard2.jfif);
+}
+
+.photos div:nth-child(27) {
+    grid-area: 1 / 16 / 3 / 17;
+    background-image: url(images/computer2.jfif);
+}
+
+.photos div:nth-child(28) {
+    grid-area: 2 / 9 / 4 / 11;
+    background-image: url(images/person.jfif);
+}
+
+.photos div:nth-child(29) {
+    grid-area: 2 / 12 / 3 / 14;
+    background-image: url(images/keyboard1.jfif);
+}
+
+.photos div:nth-child(30) {
+    grid-area: 2 / 14 / 4 / 15;
+    background-image: url(images/clock.jfif);
+}
+
+.photos div:nth-child(31) {
+    grid-area: 2 / 15 / 3 / 16;
+    background-image: url(images/darkneon.jfif);
+}
+
+.photos div:nth-child(32) {
+    grid-area: 3 / 11 / 5 / 13;
+    background-image: url(images/neonCabinet.jfif);
+}
+
+.photos div:nth-child(33) {
+    grid-area: 3 / 13 / 4 / 14;
+    background-image: url(images/biggamer.jfif);
+}
+
+.photos div:nth-child(34) {
+    grid-area: 3 / 15 / 6 / 17;
+    background-image: url(images/redblueneon.jfif);
+}
+
+.photos div:nth-child(35) {
+    grid-area: 4 / 9 / 6 / 10;
+    background-image: url(images/intern.jfif);
+}
+
+.photos div:nth-child(36) {
+    grid-area: 4 / 10 / 5 / 11;
+    background-image: url(images/computer3.jfif);
+}
+
+.photos div:nth-child(37) {
+    grid-area: 4 / 13 / 6 / 15;
+    background-image: url(images/computer4.jfif);
+}
+
+.photos div:nth-child(38) {
+    grid-area: 5 / 10 / 6 / 11;
+    background-image: url(images/computer1.jfif);
+}
+
+.photos div:nth-child(39) {
+    grid-area: 5 / 11 / 6 / 12;
+    background-image: url(images/mouse1.jfif);
+}
+
+.photos div:nth-child(40) {
+    grid-area: 5 / 12 / 6 / 13;
+    background-image: url(images/computer7.jfif);
+}

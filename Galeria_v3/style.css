@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --galWidth: 140;
+    --galWidthPer: calc(var(--galWidth) * 1%)
+}
+
+body {
+    overflow: hidden;
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #888;
+}
+
+.gallery {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    overflow: hidden
+}
+
+@keyframes slides {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: calc(var(--galWidthPer) * -1 + 100%);
+    }
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5%;
+    box-sizing: border-box;
+    height: 100%;
+    row-gap: 10%;
+    width: var(--galWidthPer);
+    background-image: url('https://media.forgecdn.net/avatars/719/919/638076340205799098.png');
+    margin-left: -5%;
+    animation: slides calc(var(--galWidth) / 25 * 1s) infinite alternate ease-in-out;
+}
+
+.photos:hover {
+    animation-play-state: paused;
+}
+
+.photos > div {
+    height: 1px;
+    width: 1px;
+    overflow: visible;
+}
+
+.photos > div > div {
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    filter: grayscale(100%);
+    outline: black solid;
+    padding: 10px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.photos div {
+    transition: transform 280ms;
+}
+
+.photos div:hover {
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+.photos img {
+    max-height: 32vh;
+    max-width: 20vw;
+    pointer-events: none;
+}
+
+.photos > div:nth-child(8) > div > div{
+    width: 200px;
+    height: 160px;
+    background-color: black;
+    max-height: 32vh;
+    max-width: 20vw;
+    pointer-events: none;
+}

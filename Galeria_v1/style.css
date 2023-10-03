@@ -1,0 +1,137 @@
+table {
+    width:  100vw;
+    height: 100vh;
+    border: 1px solid #81ff5a;
+    border-collapse: collapse;
+}
+
+td {
+    width: 10%;
+    height: 10%;
+    border: 1px solid #ffffff;
+}
+body {
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+}
+
+#Clock {
+    background-image: url(images/clock.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Computer1 {
+    background-image: url(images/computer1.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Computer2 {
+    background-image: url(images/computer2.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Computer3 {
+    background-image: url(images/computer3.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Computer4 {
+    background-image: url(images/computer4.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Computer5 {
+    background-image: url(images/computer5.jfif);
+    
+    background-size: cover;
+    background-position: center;
+}
+
+#Computer6 {
+    background-image: url(images/computer6.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Computer7 {
+    background-image: url(images/computer7.jfif);
+    background-size: cover;
+    background-position: left center;
+}
+
+#Keyboard1 {
+    background-image: url(images/keyboard1.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Keyboard2 {
+    background-image: url(images/keyboard2.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Memory {
+    background-image: url(images/Memory.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#RedblueNeon {
+    background-image: url(images/redblueneon.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#DarkNeon {
+    background-image: url(images/darkneon.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#NeonCabinet {
+    background-image: url(images/neonCabinet.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#BigGamer {
+    background-image: url(images/biggamer.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Cabinet {
+    background-image: url(images/cabinet.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Person {
+    background-image: url(images/person.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Table {
+    background-image: url(images/tableandpc.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Intern {
+    background-image: url(images/intern.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+#Mouse1 {
+    background-image: url(images/mouse1.jfif);
+    background-size: cover;
+    background-position: center;
+}
